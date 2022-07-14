@@ -1,0 +1,50 @@
+{% extends 'urlshort/base.html' %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create</title>
+</head>
+
+<body>
+
+    {% block content %}
+
+    <div class="container">
+
+        <div id="head-logo">
+            <h1>URL Shortener</h1>
+        </div>
+
+        <br>
+        <br>
+
+        <form method="POST" action="{% url 'urlshort:create' %}">
+            {% csrf_token %}
+            <label id="label1">{{ form.original_url.label_tag }}</label>
+            <br>
+            {{ form.original_url }}
+            <br>
+            <br>
+            <label id="label2">Create a custom url (optional):</label>
+            <br>
+            <label>{{ form.alias.label_tag }}</label>{{ form.alias }}
+            <br>
+            <br>
+            <label>Custom url must contain valid characters (a-zA-Z0-9)</label>
+            <br>
+            <br>
+            <button id="create-button" type="submit">Submit</button>
+            <br>
+            <br>
+        </form>
+
+    </div>
+
+    {% endblock content %}
+    
+</body>
+
+</html>

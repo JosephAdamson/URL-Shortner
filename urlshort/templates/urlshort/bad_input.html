@@ -1,0 +1,29 @@
+{% extends 'urlshort/base.html' %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create</title>
+</head>
+<body>
+
+    {% block content %}
+
+    <div class="container">
+        <div id="short-alert">
+            <h1>Bad Input. A Custom url can only contain numbers and letters.
+                Check your original url for errors.
+            </h1>
+        </div>
+        <form action="{% url 'urlshort:create' %}">
+            <button id="back-button">Back</button>
+        </form>
+    </div>      
+
+    {% endblock content %}
+
+</body>
+
+</html>

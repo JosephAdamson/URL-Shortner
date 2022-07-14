@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Base</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@1,200&family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+</head>
+
+<style>
+
+    body {
+        font-family: 'Nunito', sans-serif;
+        font-family: 'Open Sans', sans-serif;
+        background-color: #3dd9c6;
+    }
+
+    #head-logo {
+        margin: auto;
+        position: relative;
+        display: inline-block;
+        border-radius: 50px;
+        height: 200;
+        width: 400;
+        padding: 20px;
+        margin-left: 120px;
+        margin-top: 30px;
+        background: linear-gradient(90deg, #3dd9c6 0%, #22b5a4 43%, #22b5a4 100%);
+    }
+
+    #head-logo > h1 {
+        color: #FAF9F6;
+    }
+
+    .container {
+        border-radius: 50px;
+        border: solid 5px #3dd9c6; 
+        position: relative;
+        padding: 20px;
+        left: 350px;
+        top: 30px;
+        width: 500px;
+        background-color: white;
+    }
+
+    #short-alert {
+        width: 400px;
+        position: relative;
+        display:inline-block;
+        border-radius: 50px;
+        border: solid 5px #3dd9c6; 
+        margin: 10px;
+        padding: 20px;
+        left: 20px;
+        background: linear-gradient(90deg, #3dd9c6 0%, #22b5a4 43%, #22b5a4 100%);
+        color: #FAF9F6;
+    }
+
+    form {
+        text-align: center;
+        line-height: 25px;
+        overflow: auto;
+    }
+
+    input {
+        height: 25px;
+        margin: 10px;
+        width: 300px;
+        font-size: 15px;
+        position: relative;
+        border: solid 2px #3dd9c6;
+        font-family: 'Nunito', sans-serif;
+        font-family: 'Open Sans', sans-serif;
+    }
+
+    button {
+        border: solid 2px #3dd9c6;
+        border-radius: 50px;
+        background: linear-gradient(90deg, #3dd9c6 0%, #3dd9c6 43%, #22b5a4 100%);
+        font-family: 'Nunito', sans-serif;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 20px;
+        color: #FAF9F6;
+    }
+
+    button:hover {
+        background: #22b5a4;
+    }
+
+    label {
+        color: #22b5a4;
+    }
+
+    #create-button {
+        position: relative;
+        height: 40px;
+        width: 100px;
+    }
+
+    #back-button {
+        position: relative;
+        top:10px;
+        margin-bottom: 20px;
+        height: 40px;
+        width: 100px;
+    } 
+
+</style>
+
+<body>
+
+    {% block content %}
+    {% endblock content %}
+    
+</body>
+</html>
