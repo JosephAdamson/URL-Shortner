@@ -11,7 +11,8 @@ urlsh_venv/
 
 # heroku stuff #
 .runtime.txt
-.procfile
+.Procfile
+.env
 
 # Backup files # 
 *.bak 
