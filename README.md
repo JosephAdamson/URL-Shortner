@@ -31,4 +31,5 @@
  - Django
  - HTML
  - CSS
+ - Heroku
  ```
