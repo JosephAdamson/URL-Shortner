@@ -10,8 +10,8 @@ media
 urlsh_venv/
 
 # heroku stuff #
-*.txt
-!requirements.txt
+.Profile
+.runtime.txt
 
 # Backup files # 
 *.bak 
