@@ -19,19 +19,19 @@
         <form action="{% url 'urlshort:create' %}">
             <button id="back-button">Back</button>
         </form>
-    </div>      
+    </div>
+    
+    <script>
+        function setBaseURL() {
+           const element = document.querySelector('.result-container');
+
+           // overwriting inner string
+           element.innerHTML = element.replace('BASE_URL', window?.location.host);
+       };
+       setBaseURL();
+   </script>
     
     {% endblock content %}
-
-    <script>
-         function setBaseURL() {
-            const element = document.querySelector('.result-container');
-
-            // overwriting inner string
-            element.innerHTML = element.replace('BASE_URL', window?.location.host);
-        };
-        setBaseURL();
-    </script>
     
 </body>
 
