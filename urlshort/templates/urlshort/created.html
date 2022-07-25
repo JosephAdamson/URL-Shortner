@@ -26,7 +26,7 @@
            const element = document.querySelector('.result-container');
 
            // overwriting inner string
-           element.innerHTML = element.replace('BASE_URL', window?.location.host);
+           element.innerHTML = element.innerHTML.replace('BASE_URL', window?.location.host);
        };
        setBaseURL();
    </script>
