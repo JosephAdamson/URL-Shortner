@@ -14,7 +14,7 @@
 
     <div class="container">
         <div id="short-alert">
-            <h1>Your short url is: localhost:8000/{{ short_url }}</h1>
+            <h1 class="result-container" >Your short url is: BASE_URL/{{ short_url }}</h1>
         </div>
         <form action="{% url 'urlshort:create' %}">
             <button id="back-button">Back</button>
@@ -22,6 +22,16 @@
     </div>      
     
     {% endblock content %}
+
+    <script>
+         function setBaseURL() {
+            const element = document.querySelector('.result-container');
+
+            // overwriting inner string
+            element.innerHTML = element.replace('BASE_URL', window?.location.host);
+        };
+        setBaseURL();
+    </script>
     
 </body>
 
