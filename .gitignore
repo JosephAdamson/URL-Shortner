@@ -9,7 +9,7 @@ media
 # my virtual environment #
 urlsh_venv/
 
-# heroku stuff #
+# heroku stuff
 Procfile
 runtime.txt
 
